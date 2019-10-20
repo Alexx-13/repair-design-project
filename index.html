@@ -54,16 +54,13 @@
 
                         </div>
                         <div id="banner__scroll-down">
-                            <div>
-                                <div class="button-scroll">
-                                    <span>SCROLL DOWN</span>
-                                    <div class="banner__scroll-down__arrow">
-                                        <span>&#8744</span>
-                                    </div>
+                            <div class="button-scroll">
+                                <span>SCROLL DOWN</span>
+                                <div class="banner__scroll-down__arrow">
+                                    <span>&#8744</span>
                                 </div>
-                                <!-- <input type="button"  class="button-scroll"  value="SCROLL DOWN"> -->
                             </div>
-                        </div>
+                       </div>
                     </div>
                 </div>
             </header>
@@ -101,12 +98,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-review__ar-slide">
-                                <span>&#8592</span>
-                                <span>&#8594</span>
-                                <span>&#9675</span>
-                                <span>&#9675</span>
-                                <span>&#9675</span>
+                            <div class="text-review__ar">
+                                <div class="text-review__ar-slide">
+                                    <div><span>&#8592 &#9675 &#9675 &#9675 &#8594</span></div>
+                            </div>
+                             
                             </div>
                         </div>
 
@@ -119,25 +115,15 @@
                             <a href="#" class="animated infinite bounce
                                 delay-2s">ROSTOV-ON-DON PATRIOTIC</a>
                         </div>
-                        <div id="slider">
-                            <div class="inner">
-                                <input type="radio" name="images" id="i1" checked>
-                                <input type="radio" name="images" id="i2">
-                                <div class="page" id="one">
-                                    <img src="./accets/1st-room.png">
-                                    <label for="i2" class="pre"></label>
-                                    <label for="i2" class="nxt"></label>
-                                </div>
-                                <div class="page" id="two">
-                                    <img src="./accets/2nd-room.png">
-                                    <label for="i1" class="pre"></label>
-                                    <label for="i1" class="nxt"></label>
-                                </div>
-                                
-                                
-                                 
-                                
+                        <div class="slider-container">
+                            <div class="menu">
+                                <label  id="menu__dot-1" for="slide-dot-1"></label>
+                                <label  id="menu__dot-2" for="slide-dot-2"><span>></span></label>
                             </div>
+                            <input id="slide-dot-1" type="radio" name="slides" checked>
+                                <div class="slide slide-1"></div>
+                            <input id="slide-dot-2" type="radio" name="slides">
+                                <div class="slide slide-2"></div>
                         </div>
                     </div>
                 </div>
@@ -543,8 +529,8 @@
         <div id="team-describe">
             <img src ="./accets/yellow-rectangle.png">
             <p>Each employee of our company is a qualified full-time specialist
-                with work experience of 6 years.
-                We do not have laborers and guest workers, each employee carries
+                with work experience of 6 years.</p>
+            <p>We do not have laborers and guest workers, each employee carries
                 out work corresponding to his specialty.</p>
         </div>
         <div id="reviews">
@@ -559,8 +545,10 @@
             <div id="reviews__clients">
                 <div class="reviews__clients-portfolious">
                     <div class="reviews__clients-portfolious__fedosova">
-                        <img src="./accets/reviews-fedosova.png">
-                        <h3>Fedosova Maria Konstantinovna</h3>
+                        <div class="reviews__clients-portfolious-title">
+                            <img src="./accets/reviews-fedosova.png">
+                            <h3>Fedosova Maria Konstantinovna</h3>
+                        </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
                                 THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="reviews__clients-portfolious__fedosova-logo">
@@ -571,8 +559,10 @@
                         </div>
                     </div>
                     <div class="reviews__clients-portfolious__afanasyev">
-                        <img src="./accets/reviews-afanasyev.png">
-                        <h3>Afanasiev Sergey Alexandrovich</h3>
+                        <div class="reviews__clients-portfolious-title">
+                            <img src="./accets/reviews-afanasyev.png">
+                            <h3>Afanasiev Sergey Alexandrovich</h3>
+                        </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
                                 THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="reviews__clients-portfolious__afanasyev-logo"> <img src="./accets/reviews-arrows.png"><a
@@ -582,8 +572,10 @@
                         </div>
                     </div>
                     <div class="reviews__clients-portfolious__kiriev">
-                        <img src="./accets/reviews-kiriev.png">
-                        <h3>Kirirev Egor Leonidovich</h3>
+                        <div class="reviews__clients-portfolious-title">
+                            <img src="./accets/reviews-kiriev.png">
+                            <h3>Kirirev Egor Leonidovich</h3>
+                        </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
                                 THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="reviews__clients-portfolious__kiriev-logo"> <img src="./accets/reviews-arrows.png"><a
@@ -650,10 +642,4 @@
             </footer__banner-wrapper>
         </footer>
     </body>
-    <script>
-        // function nextImage() {
-        //     const inner = document.querySelector('#slider .inner')[0];
-        //     alert(inner);
-        // }
-    </script>
 </html>
