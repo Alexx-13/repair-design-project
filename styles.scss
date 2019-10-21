@@ -2316,30 +2316,35 @@ footer{
    display: flex;
 }
 /***************************************Adapted version ************************************************/
-@media  only screen and (max-width:375px)  {
+@media  only screen and (max-width:640px) {
     #header__banner-wrapper{
         position: relative;
-        height: 838px;
+        height: 533px;
         left: 0px;
         top: 0px;
         display: flex;
         background-color: #131313;
+        
     }
     
     .header{
-        @include flexible-rel();
+        width: 640px;
         height: 82px;
         
         background: #131313;
+    }    
+
+    header{
+        height: 533px;
     }
     
     #header__title{
-   
-    font-family: FuturaDemiC;
-    font-size: 12px;
-    line-height: 14px;
-
-    color: #E3B873;
+    
+        font-family: FuturaDemiC;
+        font-size: 12px;
+        line-height: 14px;
+        
+        color: #E3B873;
        
     }
     
@@ -2355,7 +2360,7 @@ footer{
         font-family: FuturaDemiC;
         font-size: 12px;
         line-height: 14px;
-        text-align: right;
+        text-align: left;
         
         color: #FFFFFF;
     }
@@ -2377,7 +2382,7 @@ footer{
     
     .banner{
         @include flexible-rel();
-        height: 707px;
+        height: 533px;
     }
     
     #banner__content{
@@ -2388,55 +2393,44 @@ footer{
         -o-background-size: 100%; /* Opera 9.6+ */
         background-size: 100%;
         display: flex;
-        width: 1440px;
-    
+        width: 100%;
+        height: 533px;
+        align-items: center;
     }
+
     
     #banner__instagram{
-        position: absolute;
-        height: 707px;
-        width: 82px;
-        background-color: #131313;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+       
         display: none;
     
     
     }
     
     #banner__instagram div {
-        display: flex;
-        justify-content: space-around;
-        width: 180px;
-        transform: rotate(90deg);
+      
         display: none;
     }
     
     #banner__instagram a{
-        color: #E3B873;
-        display: flex;
-        align-items: center;
-        position: relative;
+       
         display: none;
     }
     
     #banner__instagram hr {
-        background-color: #E3B873;
-        color: #E3B873;
-        border-color:#E3B873 ;
-        height: 40px;
-        transform: rotate(90deg);
+       
         display: none;
     }
     
     .banner__content-info{
-        width: 676px;
-        height: 305px;
-        margin-left: 135px;
-        margin-top: 250px;
+        width: 100%;
+        height: 476px;
+        margin-left: 0;
+        margin-top: 0;
+        background-image: url("./accets/room-background.png");
+        padding: 0px 40px 70px 40px;
     }
+
+
     
     .banner__content-info h1{
         font-family: Yeseva One;
@@ -2458,9 +2452,17 @@ footer{
         color: #FFFFFF;
         width: 380px;
     }
+
+    .banner__content-info div{
+       height: 130px;
+       width: 214px;
+    }
+
+
+
     
     .button-colculate{
-        width: 207px;
+        width: 500px;
         height: 51px;
         background-color: #E3B873;
         color: #FFFFFF;
@@ -2480,12 +2482,13 @@ footer{
     }
     
     .button-submit{
-        width: 207px;
+        width: 500px;
         height: 51px;
        color:#FFFFFF;
        background-color: transparent;
        transition: all 1s ease;
-        margin-left: 30px;
+        margin-left: 0px;
+        margin-top: 20px;
     }
     
     .button-submit:hover{
@@ -2498,73 +2501,38 @@ footer{
     
     
     #banner__scroll-down{
-        width: 1440px;
-        height: 97px;
-        position: absolute;
-        margin-right: 1400px;
-        margin-top: 660px;
-        justify-content: center;
-        align-items: center;
+      
         display:none;
     }
     
     .banner__scroll-down__arrow{
-        display: flex;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background:
-           linear-gradient(#131313,#131313) padding-box,
-           linear-gradient(to right, #E3B873 0%, #E3B873 20%, #E3B873 20%, #E3B873 100%) border-box;
-        border: 3px solid transparent;
+    
         display:none;
     }
     
     .banner__scroll-down__arrow span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-         width: 2em;
-        height: 2em;
+       
         display:none;
         
     }
     
     .button-scroll{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        cursor: pointer;
-        width: 247px;
-        height: 97px;
-        background: #131313;
-        border: #E3B873;
-        color: #131313;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 14px;
-        transition: all 1s ease;
-        position: relative;
-        box-sizing: border-box;
+     
         display:none;
     }
     
     .button-scroll span{
-        color: #fff;
+        
         display:none;
     }
     
     .button-scroll img{
-        width: 29px;
-        height: 29px;
+   
         display:none;
     }
     
     .button-scroll:hover{
-        background: rgba(10,10,10,10);
-        color: #E3B873;
-        box-shadow: inset 0 0 0 3px  #E3B873;
+       
         display:none;
     }
     
@@ -2572,36 +2540,33 @@ footer{
     
     
     .container{
-        width: 1440px;
-        height: 800px;
+        width: 640px;
+        height: 1048px;
         background-color:#131313;
     }
     
     
     #background__content__slider{
         position: relative;
-        width: 1440px;
+        width: 100%;
         height: 1200px;
         display: flex;
         background: #131313;
     }
     
     #content__slider-content{
-        margin-top: 100px;
+        margin-top: 0px;
         display: flex;
         position: relative;
-        justify-content: row;
-        align-content: row;
         background: #131313;
         overflow: hidden;
+        
     }
     
     
     .text-review{
         display: flex;
         position: relative;
-        justify-content: column;
-        align-content: column;
         width: 442px;
         height: 700px;
         background-color: #131313;
@@ -2611,11 +2576,25 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 70px;
+        margin-top: 0px;
+    }
+
+    .text-review__title-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 100%;
        
-    
-    
-    
+    }
+
+
+  
+
+
+
+    .text-review__title hr{
+        display: none;
     }
     
     
@@ -2661,7 +2640,7 @@ footer{
         align-items: center;
         justify-content: space-between;
         width: 250px;
-        display:none;
+       
     }
     
     .text-review__title-line hr{
@@ -2671,7 +2650,15 @@ footer{
         border-color: #E3B873;
         margin-top: 32px;
     }
-    
+
+    #text-review__media-slider{
+        position: relative;
+        
+    }
+
+
+
+
     .parameters{
        flex-direction: row;
        display: flex;
@@ -2721,7 +2708,10 @@ footer{
         letter-spacing: 2px;
     }
     
-    
+    .title-pictures-review{
+        display: none;
+    }
+
     
     
     .slider-container{
@@ -2834,6 +2824,8 @@ footer{
         margin-right: 150px;
     }
     
+    
+
     .title-pictures-review img{
         display: flex;
         width: 679px;
