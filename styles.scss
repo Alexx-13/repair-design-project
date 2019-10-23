@@ -56,6 +56,12 @@ a {
 #media-portrets{
     display:none;
 }
+.media-leave-a-quastion__block{
+    display: none;
+}
+.media-foot{
+    display: none;
+}
 
 #header__banner-wrapper{
     position: relative;
@@ -3558,9 +3564,7 @@ footer{
     
     }
 
-    #media-portrets{
-        display: block;
-    }
+   
     
     
     
@@ -3591,179 +3595,216 @@ footer{
         display: none;
     }
     
-    
-   
-    
-    
-    
-    .leave-a-quastion{
-        position: absolute;
-        width: 883px;
-       height: 445px;
+    #media-portrets{
+        display: block;
+        width: 640px;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+  
+
+
+    #media-portrets__logo{
+        width: 100%;
+        padding-left: 50px;
+        position: relative;
+        z-index: 10;
+    }
+
+    #media-portrets__logo img{
+        width: 150px;
+    }
+
+    .media-portrets__description-manager{
+       padding-left: 100px;
+       margin: -90px 0px 0px 20px;
     }
     
+
+    .media-portrets__description-manager__column{
+        height: 160px;
+        width: 300px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 100px;
+        background-color: #FFFFFF;
+        margin: -160px 0px 0px 50px;
+    }
+
+    .media-portrets__description-designer{
+        padding-left: 100px;
+       margin: -90px 0px 0px 20px;
+    }
+
+    .media-portrets__description-designer img{
+        height: 529px;
+        width: 402px;
+    }
+
+    .media-portrets__description-designer__column{
+        height: 160px;
+        width: 300px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 100px;
+        background-color: #FFFFFF;
+        margin: -160px 0px 0px 50px;
+    }
+
+    .media-portrets__description-foremanr{
+       padding-left: 100px;
+       margin: -90px 0px 0px 20px;
+    }
+
+    .media-portrets__description-foremanr__column{
+        height: 160px;
+        width: 300px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 100px;
+        background-color: #FFFFFF;
+        margin: -160px 0px 0px 50px;
+    }
+
     .leave-a-quastion__block{
         width: 1440px;
        height: 400px;
         align-items: center;
         justify-content: center;
+        display: none;
+    }
+    
+    .media-leave-a-quastion__block{
         display: flex;
+        width: 640px;
+        height: 600px;
+         align-items: center;
+         justify-content: center;
+        background-color: #131313;
     }
+   
+   .media-leave-a-quastion__frame{
+       position: relative;
+       width: 600;
+       height: 600px;
+       padding-top: 100px;
+   }
+
+   .media-leave-a-quastion__frame-text label{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
     
-    .leave-a-requset__block-frame{
-        width: 883px;
-       height: 445px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    color: #FFFFFF;
+   }
+
+   .media-leave-a-quastion__frame-part-a{
+       padding-top: 50px;
+   }
+
+   #media-leave-a-quastion__name{
        background-color: #131313;
+       width: 100%;
+       height: 50px;
+       border-width: 0px 0px 1px 0px;
+       
+   }
+
+   .media-leave-a-quastion__frame-part-a p{
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
     
-    }
+    color: rgba(255, 255, 255, 0.5);
     
-    .leave-a-quastion__frame{
+   }
+   
+   .media-leave-a-quastion__frame-part-b{
+        padding-top: 50px;
+   }
+
+   .media-leave-a-quastion__frame-part-b p{
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: rgba(255, 255, 255, 0.5);
+    
+   }
+
+   #media-leave-a-quastion__number{
+       width: 100%;
+       height: 50px;
        background-color: #131313;
-       padding: 40px;
-       margin-top: 200px;
-       position: absolute;
-        width: 800px;
-       height: 445px;
-       align-items: center;
-       justify-content: center;
-       z-index: 3;
-       padding-left: 150px;
-       
-    }
-    
-    .leave-a-quastion__frame-name{
-       align-items: center;
-       justify-content: space-between;
-       display: inline-flex;
-    }
-    
-    
-    
-    .leave-a-quastion__frame p{
-       font-family: FuturaBookC;
-       font-size: 15px;
-       line-height: 20px;
-       font-weight: bold;
-       padding: 30px 0px 0px 0px;
-       color: #959595;
-    }
-    
-    .leave-a-quastion__frame-agree{
-       margin-bottom: 50px;
-    }
-    
-    .leave-a-quastion__frame-text label{
-       height: 47px;
-       width: 230px;
-       display: flex;
-       color: #FFFFFF;
-       
-       justify-content: center;
-       font-family: FuturaDemiC;
-       font-size: 20px;
-       line-height: 25px;
-       text-align: center;
-    
-    
-    
-       color: #FFFFFF;
-    
-    }
-    
-    #leave-a-quastion__name{
-       width: 300px;
-       height: 50px;
        border-width: 0px 0px 1px 0px;
-       font-family: FuturaMediumC;
-       font-size: 18px;
-       line-height: 25px;
-       color: #FFFFFF;
-       background-color: transparent;
        
-    
+   }
+
+   
+   .media-leave-a-quastion__frame-email {
+        padding-top: 50px;
+    }
+
+    .media-leave-a-quastion__frame-email p{
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        
+        color: rgba(255, 255, 255, 0.5);
+        
+       }
+
+    #media-leave-a-quastion__email{
+        width: 100%;
+        height: 50px;
+        background-color: #131313;
+        border-width: 0px 0px 1px 0px;
+    }
+
+    .media-leave-a-quastion__frame-agree{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 20px;
+        color: #FFFFFF;
+
     }
     
-    #leave-a-quastion__frame-name{
-        display: inline;
-        align-items: center;
-        justify-content: center;
+    #media-cheсkbox-accept{
+        background-color: #E3B873;
+        width: 20px;
+        height: 15px;
+        color: #fff;
+
     }
-    
-    #leave-a-quastion__number{
-       width: 300px;
-       height: 50px;
-       border-width: 0px 0px 1px 0px;
-       font-family: FuturaMediumC;
-       font-size: 18px;
-       line-height: 25px;
-       color: #FFFFFF;
-       background-color: transparent;
-       
-    }
-    
-    .leave-a-quastion__frame-part-b{
-        margin-left: 60px;
-    }
-    
-    #leave-a-quastion__email{
-       width: 670px;
-       height: 50px;
-       border-width: 0px 0px 1px 0px;
-       font-family: FuturaMediumC;
-       font-size: 18px;
-       line-height: 25px;
-       color: #FFFFFF;
-       background-color: transparent;
-    }
-    
-    .leave-a-quastion__frame-agree{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #button-quastion{
-       background-color: #E3B873;
-       width: 213px;
-       height: 51px;
-       margin-left: 200px;
-       color: #FFFFFF;
-       border-color: #E3B873;
+
+    #media-button-request{
+        margin-top: 50px;
+        background-color: #E3B873;
+        width: 100%;
+        height: 51px;
+        margin-left: 0px;
+        color: #FFFFFF;
+        border-color: #E3B873;
     }
     
     
     
     .city-background{
-        position: absolute;
-       height: 1000px;
-        width: 1440px;
-        display: flex;
-        background-image: url("./accets/background-black.png");
-        background-repeat: no-repeat;
-        -moz-background-size: 100%; /* Firefox 3.6+ */
-        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100%; /* Opera 9.6+ */
-        background-size: 100%;
+        display: none;
+       
         
+    }
+    .media-foot{
+        display: flex;
+        height: 300px;
     }
     
-    .city-background h3{
-        font-family: Yeseva One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 28px;
-        text-align: center;
-        text-transform: uppercase;
-        width: 1000px;
-        color: #E3B873;
-        padding-left: 150px;
-      
-        
-    }
+    
     
     
     .requisites{
@@ -3780,31 +3821,18 @@ footer{
     }
   
     footer__banner-wrapper{
-        background-color: #131313;
+
         display: none;
     }
     
-    footer__banner-wrapper div{
-        padding-top: 10px;
-    }
-    
-    footer__banner-wrapper h2{
-        
-    font-family: FuturaDemiC;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    
-    color: #E3B873;
-    }
     
     
     footer{
         position: absolute;
-        width: 1440px;
-        height: 133px;
+        width: 640px;
+        height: 300px;
        
-       margin-top: 900px;
+       margin-top: 0px;
        display: flex;
     }
      

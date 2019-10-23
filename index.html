@@ -725,44 +725,49 @@
             </div>
         </div>
         <div id="media-portrets">
-                <div class="portrets__logo">
-                    <div class="portrets__logo__a">
-                        <img src="./accets/logo-head.png">
-                    </div>
-                    <div class="portrets__logo__b">
-                        <img src="./accets/logo-suitcase.png">
-                    </div>
-                    <div class="portrets__logo__c">
-                        <img src="./accets/logo-pen.png">
-                    </div>
-                    
-                    
+            <div class="media-portrets__a">
+                <div id="media-portrets__logo" class=media-portrets__logo-a>
+                    <img src="./accets/logo-head.png">
                 </div>
-                <div class="portrets__pictures">
+                <div class="media-portrets__description-manager">
                     <img src="./accets/portret-a.png">
-                    <div class="portrets__pictures-woman">
-                        <img src="./accets/portret-b.png">
-                    </div>
-                    <img src="./accets/portret-c.png">
-                </div>
-                <div id="portrets__description">
-                    <div class="portrets__description-manager">
+                    <div class="media-portrets__description-manager__column">
                         <h3>Dmitry tulyakov</h3>
                         <p>Project manager</p>
                         <p><input type="button" id="button-exp-eight" value="WORK EXPERIENCE 8 YEARS"></p>
                     </div>
-                    <div class="portrets__description-designer">
+                </div>
+            </div>
+            <div class="media-portrets__b">
+                <div id="media-portrets__logo" class=media-portrets__logo-b>
+                        <img src="./accets/logo-suitcase.png">
+                </div>
+                <div class="media-portrets__description-designer">
+                    <img src="./accets/portret-b.png">
+                    <div class="media-portrets__description-designer__column">
                         <h3>Larisa Kotlyarova</h3>
                         <p>Designer</p>
                         <p><input type="button" id="button-exp-six" value="WORK EXPERIENCE 6 YEARS"></p>
                     </div>
-                    <div class="portrets__description-foremanr">
+                </div>
+            </div>
+            <div class="media-portrets__c">
+                <div id="media-portrets__logo" class=media-portrets__logo-c>
+                        <img src="./accets/logo-pen.png">
+                </div>
+                
+               
+                <div class="media-portrets__description-foremanr">
+                    <img src="./accets/portret-c.png">
+                    <div class="media-portrets__description-foremanr__column">
                         <h3>Alexey Efimov</h3>
                         <p>Foremanr</p>
                         <p><input type="button" id="button-exp-twelve" value="WORK EXPERIENCE 12 YEARS"></p>
                     </div>
                 </div>
             </div>
+        </div>        
+            
         <div id="team-describe">
             <img src ="./accets/yellow-rectangle.png">
             <p>Each employee of our company is a qualified full-time specialist
@@ -827,32 +832,50 @@
             </div>
         </div>
         <div class="leave-a-quastion__block">
-            <div class="leave-a-quastion__block-frame"></div>
-                <div class="leave-a-quastion__frame">
-                    <div class="leave-a-quastion__frame-text">
-                            <label>HAVE ANY QUASTIONS?</label>
-                    </div>
-                    <div class="leave-a-quastion__frame-name">
-                        <div class="leave-a-quastion__frame-part-a"><p>Name</p>
-                            <input type="text" id="leave-a-quastion__name"  placeholder="What is your name:">
-                        </div>
-                        <div class="leave-a-quastion__frame-part-b"><p>Phone</p>
-                            <input type="text" id="leave-a-quastion__number"  placeholder="Your phone number:">
-                        </div>
-                    </div>  
-                   
-                        
-                    
-                    <div form="leave-a-quastion__frame-email">
-                        <p>Quastion</p>
-                        <input type="text" id="leave-a-quastion__email"  placeholder="I want to know">
-                    </div>
-                <div class="leave-a-quastion__frame-agree">
-                    <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data</p>
+            <div class="leave-a-quastion__frame">
+                <div class="leave-a-quastion__frame-text">
+                        <label>HAVE ANY QUASTIONS?</label>
                 </div>
-                    <button type="submit" id="button-request">CALL THE MEASURER</button>
+                <div class="leave-a-quastion__frame-name">
+                    <div class="leave-a-quastion__frame-part-a"><p>Name</p>
+                        <input type="text" id="leave-a-quastion__name"  placeholder="What is your name:">
+                    </div>
+                    <div class="leave-a-quastion__frame-part-b"><p>Phone</p>
+                        <input type="text" id="leave-a-quastion__number"  placeholder="Your phone number:">
+                    </div>
+                </div>  
+                <div form="leave-a-quastion__frame-email">
+                    <p>Quastion</p>
+                    <input type="text" id="leave-a-quastion__email"  placeholder="I want to know">
                 </div>
+            <div class="leave-a-quastion__frame-agree">
+                <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data</p>
             </div>
+                <button type="submit" id="button-request">CALL THE MEASURER</button>
+            </div>
+        </div>
+        <div class="media-leave-a-quastion__block">
+             <div class="media-leave-a-quastion__frame">
+                <div class="media-leave-a-quastion__frame-text">
+                        <label>HAVE ANY QUASTIONS?</label>
+                </div>
+                <div class="media-leave-a-quastion__frame-part-a"><p>Name</p>
+                    <input type="text" id="media-leave-a-quastion__name"  placeholder="What is your name:">
+                </div>
+                <div class="media-leave-a-quastion__frame-part-b"><p>Phone</p>
+                    <input type="text" id="media-leave-a-quastion__number"  placeholder="Your phone number:">
+                </div>
+                 
+                <div class="media-leave-a-quastion__frame-email">
+                    <p>Quastion</p>
+                    <input type="text" id="media-leave-a-quastion__email"  placeholder="I want to know">
+                </div>
+                <div class="media-leave-a-quastion__frame-agree">
+                    <p><input type="checkbox" name="option1" value="a1" id="media-cheсkbox-accept" checked>I agree to the processing of personal data</p>
+                </div>
+                <button type="submit" id="media-button-request">CALL THE MEASURER</button>
+            </div>
+        </div>
         <div class="city-background">
             <div class="requisites">
                 <div class="requisites-title">
@@ -862,9 +885,6 @@
                         <img src="./accets/icon-inst.png">
                     </div>
                 <img src="./accets/background-black-map.png">
-                
-                
-                        
             </div>
         </div>
         <footer>
@@ -895,6 +915,15 @@
                     </div>
                 </div>
             </footer__banner-wrapper>
+            <div class="media-foot">
+                    <img src="./accets/background-black-map.png">
+                    <div class="media-requisites-title">
+                            <h3>Rostov-on-Don, Nansen St., 239 Shopping Center</h3>
+                            <h3>Decorum Tel +7 (928) 768 32 29</h3>
+                            <img src="./accets/icon-mail.png">
+                            <img src="./accets/icon-inst.png">
+                        </div>
+            </div>
         </footer>
     </body>
 </html>
