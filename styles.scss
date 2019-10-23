@@ -2933,7 +2933,7 @@ footer{
    
     #background__content__info{
     
-        height: 2369px;
+        height: 2000px;
         margin-top: 0px;
         background-color: white;
         display: flex;
@@ -3436,6 +3436,15 @@ footer{
     }
 
 
+    #black-box__contant-logo{
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        background-color: #131313;
+    }
+    
+
     .media-black-box_area__content-mini{
         margin: -200px 0px 0px -1px;
         background-color: white;
@@ -3801,11 +3810,32 @@ footer{
     }
     .media-foot{
         display: flex;
+        height: 600px;
+        flex-direction: column;
+    }
+    
+    .media-foot img{
+        width: 400px;
         height: 300px;
     }
     
-    
-    
+    .media-requisites-title img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .media-requisites-title h3{
+     font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138.6%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #E3B873;
+    }
     
     .requisites{
         width: 100%;
