@@ -5,6 +5,7 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0,
             shrink-to-fit=no">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
         <title>repair-design-project</title>
     </head>
     <body>
@@ -38,7 +39,7 @@
                         <div id="banner__content">
                             <div id="banner__instagram">
                                 <div>
-                                    <a href="#" class="animated infinite bounce delay-2s">INSTAGRAM</a>
+                                    <a href="https://www.instagram.com/?hl=ru" class="animated infinite bounce delay-2s">INSTAGRAM</a>
                                     <hr>
                                 </div>
                              </div>
@@ -55,10 +56,11 @@
                         </div>
                         <div id="banner__scroll-down">
                             <div class="button-scroll">
-                                <span>SCROLL DOWN</span>
+                                
                                 <div class="banner__scroll-down__arrow">
                                     <span>&#8744</span>
                                 </div>
+                                <a href="#yak1">SCROLL DOWN</a>
                             </div>
                        </div>
                     </div>
@@ -75,6 +77,27 @@
                                 company is presented on the site. For 14 years on in
                                 the construction
                                 market we have made happy more than 1000 families</div>
+                            <div id="text-review__media-slider">
+                                <div class="title-media-pictures-review">
+                                    <div id="title-media">
+                                        <a href="#" class="animated infinite bounce
+                                                                            delay-2s">ROSTOV-ON-DON ADMIRAL</a>
+                                        <a href="#" class="sochi-thives">SOCHI THIEVES</a>
+                                        <a href="#" class="animated infinite bounce
+                                                                        delay-2s">ROSTOV-ON-DON PATRIOTIC</a>
+                                    </div>
+                                    <div class="slider-media-container">
+                                        <div class="menu-media">
+                                            <label id="menu-media__dot-1" for="slide-media-dot-1"></label>
+                                            <label id="menu-media__dot-2" for="slide-media-dot-2"><span>></span></label>
+                                        </div>
+                                        <input id="slide-media-dot-1" type="radio" name="slides-media" checked>
+                                        <div class="slide-media slide-1"></div>
+                                        <input id="slide-media-dot-2" type="radio" name="slides-media">
+                                        <div class="slide-media slide-2"></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="parameters">
                                 <div class="parameters__left">
                                     <div id="city">
@@ -101,6 +124,8 @@
                             <div class="text-review__ar">
                                 <div class="text-review__ar-slide">
                                     <div><span>&#8592 &#9675 &#9675 &#9675 &#8594</span></div>
+                                    	
+                               
                             </div>
                              
                             </div>
@@ -149,6 +174,26 @@
                     broadcast.</p>
 
             </div>
+            <div class="media-background__contant__info-submit">
+                <div class="leave-a-requeset__block">
+                    <div class="leave-a-requeset__frame">
+            
+                        <div form="leave-a-requeset__frame-name">
+                            <p>Name</p>
+                            <input type="text" id="leave-a-requeset__name" placeholder="What is your name:">
+                        </div>
+                        <div form="leave-a-requeset__frame-number">
+                            <p>Number</p>
+                            <input type="text" id="leave-a-requeset__number" placeholder="Your phone number:">
+                        </div>
+                        <div class="leave-a-requeset__frame-agree">
+                            <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the
+                                processing of personal data</p>
+                        </div>
+                        <button type="submit" id="button-request">CALL THE MEASURER</button>
+                    </div>
+                </div>
+            </div>
             <div class="background__content__info-submit">
                 <div class="background__content__info-submit__a">
                     <p>Name</p>
@@ -158,12 +203,29 @@
                     <p>Phone</p>
                     <input type="text" id="background__content__info-submit__b__number"  placeholder="Your phone number:">
                 </div>
-                <button type="submit" id="button"><p>SUBMIT</p></button>
+                <input type="submit" id="button"  class="button-call" value="SUBMIT">
             </div>
             <div class="background__content__info-confirm">
                 <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data<Br>
-
             </div>
+        <div class="media-background__content__info-submit">
+            <div class="media-background__content__info-submit__a">
+                <p>Name</p>
+                <input type="text" id="media-background__content__info-submit__a__name" placeholder="What is your name:">
+                <p>Phone</p>
+                <input type="text" id="media-background__content__info-submit__b__number" placeholder="Your phone number:">
+                <div class="media-background__content__info-confirm">
+                    <p><input type="media-checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the
+                        processing of personal data<Br>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        <button type="submit" id="media-button-submit">
+            <p>SUBMIT</p>
+        </button>
             <div class="background__content__info-tipes-of-repair">
                 <h2>TYPES OF REPAIR</h2>
                 <img src="./accets/tools.png">
@@ -193,7 +255,7 @@
                                 <li> Replacing sockets and switches</li>
                                 <li> Replacing doors</li>
                             </ul>
-                            <p><input type="button" id="button-900" value="FROM 900 RUB / M2"></p>
+                            <p><input type="button"  id="button-900" class="button-call" value="FROM 900 RUB / M2" ></p>
                         </div>
                         <div class="icon_area__content-overhaul">
                             <h2>Overhaul</h2>
@@ -206,9 +268,66 @@
                                 <li> Replacing sockets and switches</li>
                                 <li> Replacing doors</li>
                             </ul>
-                            <p><input type="button" id="button-1800" value="FROM 1800 RUB / M2"></p>
+                            <p><input type="button" id="button-1800"  class="button-call" value="FROM 1800 RUB / M2" ></p>
                         </div>
                         <div class="icon_area__content-designer-repair">
+                            <h2>Designer-repair</h2>
+                            <ul>
+                                <li> Dismantling of old coatings</li>
+                                <li> Wallpapering</li>
+                                <li> Painting walls and ceilings</li>
+                                <li> Laying flooring</li>
+                                <li> Replacing plumbing</li>
+                                <li> Replacing sockets and switches</li>
+                                <li> Replacing doors</li>
+                            </ul>
+                            <p><input type="button" id="button-4000"  class="button-call" value="FROM 4000 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="media-icon-area">
+            <div class="media-icon-area__class">
+                <div class="media-icon-area__class__mask-groups-a">
+                    <img src="./accets/mask-group-0.png">
+                    <div class="media-icon-area__class__mask-groups-a-redicorated">
+                        <div class="media-icon_area__content-redecorated">
+                            <h2>Redecorated</h2>
+                            <ul>
+                                <li> Dismantling of old coatings</li>
+                                <li> Wallpapering</li>
+                                <li> Painting walls and ceilings</li>
+                                <li> Laying flooring</li>
+                                <li> Replacing plumbing</li>
+                                <li> Replacing sockets and switches</li>
+                                <li> Replacing doors</li>
+                            </ul>
+                            <p><input type="button" id="button-900" value="FROM 900 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-icon-area__class__mask-groups-b">
+                    <img src="./accets/mask-group-1.png">
+                    <div class="media-icon-area__class__mask-groups-b-overhaul">
+                        <div class="media-icon_area__content-overhaul">
+                            <h2>Overhaul</h2>
+                            <ul>
+                                <li> Dismantling of old coatings</li>
+                                <li> Wallpapering</li>
+                                <li> Painting walls and ceilings</li>
+                                <li> Laying flooring</li>
+                                <li> Replacing plumbing</li>
+                                <li> Replacing sockets and switches</li>
+                                <li> Replacing doors</li>
+                            </ul>
+                            <p><input type="button" id="button-1800" value="FROM 1800 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-icon-area__class__mask-groups-c">
+                    <img src="./accets/mask-group-2.png">
+                    <div class="media-icon-area__class__mask-groups-b-overhaul">
+                        <div class="media-icon_area__content-designer-repair">
                             <h2>Designer-repair</h2>
                             <ul>
                                 <li> Dismantling of old coatings</li>
@@ -224,6 +343,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             <div id="scheme__request">
                 <div class="scheme__request-scheme">
                     <img src="./accets/ellipse-background.png">
@@ -276,10 +396,10 @@
                                     <p>Email</p>
                                     <input type="text" id="leave-a-requeset__email"  placeholder="Your email">
                                 </div>
-                            <div class="leave-a-requeset__frame-agree">
-                                <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data</p>
-                            </div>
-                                <button type="submit" id="button-request">CALL THE MEASURER</button>
+                                <div class="leave-a-requeset__frame-agree">
+                                    <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data</p>
+                                </div>
+                                    <input type="submit" id="button-request" class="button-call" value="CALL THE MEASURER">
                             </div>
                         </div>
                         <div class="saver-pig">
@@ -334,6 +454,33 @@
                 </div>
             </div>
         </div>
+        <div id="media-furniture__block">
+            <div id="media-furniture__block-title">
+                <h2>We realize your
+                    wildest fantasies</h2>
+            </div>
+            <div id="text-review__media-slider">
+                <div class="title-media-pictures-review">
+                    <div id="title-media">
+                        <a href="#" class="animated infinite bounce
+                                        delay-2s">ROSTOV-ON-DON ADMIRAL</a>
+                        <a href="#" class="sochi-thives">SOCHI THIEVES</a>
+                        <a href="#" class="animated infinite bounce
+                                    delay-2s">ROSTOV-ON-DON PATRIOTIC</a>
+                    </div>
+                    <div class="slider-media-container">
+                        <div class="menu-media">
+                            <label id="menu-media__dot-1" for="slide-media-dot-1"></label>
+                            <label id="menu-media__dot-2" for="slide-media-dot-2"><span>></span></label>
+                        </div>
+                        <input id="slide-media-dot-1" type="radio" name="slides-media" checked>
+                        <div class="slide-media slide-1"></div>
+                        <input id="slide-media-dot-2" type="radio" name="slides-media">
+                        <div class="slide-media slide-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="design__title__contant">
             <div class="design-title">
                 <h2>DESIGN PROJECT</h2>
@@ -344,6 +491,66 @@
                     apartment more modern,
                     but also significantly reduces the cost of materials and
                     reduces the time of repair work.</p>
+            </div>
+        </div>
+        <div id="media-black-box-area">
+            <div class="media-black-box-area__class">
+                <div class="media-black-box-area__class__mask-groups-a">
+                    <img src="./accets/room-group-0.png">
+                    <div class="media-black-box-area__class__mask-groups-a-mini">
+                        <div class="media-black-box_area__content-mini">
+                            <h2>Mini</h2>
+                            <ul>
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plumbing plan. equipment</li>
+                            </ul>
+                            <p><input type="button" id="button-price-150" value="150 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-black-box-area__class__mask-groups-b">
+                    <img src="./accets/mask-group-1.png">
+                    <div class="media-black-box-area__class__mask-groups-b-standart">
+                        <div class="media-black-box_area__content-standart">
+                            <h2>Standart</h2>
+                            <ul>
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plan of ceilings</li>
+                                <li>Floor Plan</li>
+                                <li>Electricians plan</li>
+                                <li>Lighting plan</li>
+                            </ul>
+                            <p><input type="button" id="button-price-400" value="400 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-black-box-area__class__mask-groups-c">
+                    <img src="./accets/mask-group-2.png">
+                    <div class="media-black-box-area__class__mask-groups-c-full">
+                        <div class="media-black-box_area__content-full">
+                            <h2>Full</h2>
+                            <ul>
+                                <li>Measurement drawing</li>
+                                <li>Redevelopment</li>
+                                <li>Layout of furniture</li>
+                                <li>Plan of ceilings</li>
+                                <li>Floor Plan</li>
+                                <li>Electricians plan</li>
+                                <li>Lighting plan</li>
+                                <li>Wall reamers</li>
+                                <li>3D visualization</li>
+                                <li>Bill of materials</li>
+                                <li>Departure for a selection of materials</li>
+                                <li>Furniture selection</li>
+                            </ul>
+                            <p><input type="button" id="button-price-900" value="900 RUB / M2"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="black-box__contant-background" class="container">
@@ -373,7 +580,7 @@
                             <li>Layout of furniture</li>
                             <li>Plumbing plan. equipment</li>
                         </ul>
-                        <p><input type="button" id="button-price-150" value="150 RUB / M2"></p>
+                        <p><input type="button" id="button-price-150"  value="150 RUB / M2"></p>
                     </div>
                     <div class="black-box__contant-columns-info-standart">
                         <h2>Standart</h2>
@@ -386,7 +593,7 @@
                             <li>Electricians plan</li>
                             <li>Lighting plan</li>
                         </ul>
-                        <p><input type="button" id="button-price-400" value="400 RUB / M2"></p>
+                        <p><input type="button" id="button-price-400"   value="400 RUB / M2"></p>
                     </div>
                     <div class="black-box__contant-columns-info-full">
                         <h2>Full</h2>
@@ -404,7 +611,7 @@
                             <li>Departure for a selection of materials</li>
                             <li>Furniture selection</li>
                         </ul>
-                        <p><input type="button" id="button-price-900" value="900 RUB / M2"></p>
+                        <p><input type="button" id="button-price-900"  value="900 RUB / M2"></p>
                     </div>
                 </div>
             </div>
@@ -525,6 +732,49 @@
                 </div>
             </div>
         </div>
+        <div id="media-portrets">
+            <div class="media-portrets__a">
+                <div id="media-portrets__logo" class=media-portrets__logo-a>
+                    <img src="./accets/logo-head.png">
+                </div>
+                <div class="media-portrets__description-manager">
+                    <img src="./accets/portret-a.png">
+                    <div class="media-portrets__description-manager__column">
+                        <h3>Dmitry tulyakov</h3>
+                        <p>Project manager</p>
+                        <p><input type="button" id="button-exp-eight" value="WORK EXPERIENCE 8 YEARS"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="media-portrets__b">
+                <div id="media-portrets__logo" class=media-portrets__logo-b>
+                    <img src="./accets/logo-suitcase.png">
+                </div>
+                <div class="media-portrets__description-designer">
+                    <img src="./accets/portret-b.png">
+                    <div class="media-portrets__description-designer__column">
+                        <h3>Larisa Kotlyarova</h3>
+                        <p>Designer</p>
+                        <p><input type="button" id="button-exp-six" value="WORK EXPERIENCE 6 YEARS"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="media-portrets__c">
+                <div id="media-portrets__logo" class=media-portrets__logo-c>
+                    <img src="./accets/logo-pen.png">
+                </div>
+        
+        
+                <div class="media-portrets__description-foremanr">
+                    <img src="./accets/portret-c.png">
+                    <div class="media-portrets__description-foremanr__column">
+                        <h3>Alexey Efimov</h3>
+                        <p>Foremanr</p>
+                        <p><input type="button" id="button-exp-twelve" value="WORK EXPERIENCE 12 YEARS"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="team-describe">
             <img src ="./accets/yellow-rectangle.png">
             <p>Each employee of our company is a qualified full-time specialist
@@ -545,21 +795,22 @@
                 <div class="reviews__clients-portfolious">
                     <div class="reviews__clients-portfolious__fedosova">
                         <div class="reviews__clients-portfolious-title">
-                            <img src="./accets/reviews-fedosova.png">
+                            <img  class="icon-log" src="./accets/reviews-fedosova.png">
                             <h3>Fedosova Maria Konstantinovna</h3>
                         </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
                                 THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
                         <div class="reviews__clients-portfolious__fedosova-logo">
-                            <img src="./accets/reviews-arrows.png"><a
-                            href="#" class="animated infinite bounce delay-2s">40 M2</a>
-                            <img src="./accets/reviews-tab.png"><a
-                            href="#" class="animated infinite bounce delay-2s">48 DAYS</a>
+                                <img  src="./accets/reviews-arrows.png"><a
+                                href="#" class="animated infinite bounce delay-2s">40 M2</a>
+                                <img src="./accets/reviews-tab.png"><a
+                                href="#" class="animated infinite bounce delay-2s">48 DAYS</a>
+                            
                         </div>
                     </div>
                     <div class="reviews__clients-portfolious__afanasyev">
                         <div class="reviews__clients-portfolious-title">
-                            <img src="./accets/reviews-afanasyev.png">
+                            <img  class="icon-log" src="./accets/reviews-afanasyev.png">
                             <h3>Afanasiev Sergey Alexandrovich</h3>
                         </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
@@ -572,7 +823,7 @@
                     </div>
                     <div class="reviews__clients-portfolious__kiriev">
                         <div class="reviews__clients-portfolious-title">
-                            <img src="./accets/reviews-kiriev.png">
+                            <img  class="icon-log" src="./accets/reviews-kiriev.png">
                             <h3>Kirirev Egor Leonidovich</h3>
                         </div>
                         <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
@@ -589,26 +840,93 @@
                 </div>
             </div>
         </div>
-        <div id="right-white-backgound">
-            <img src="">
-        </div>
-        <div class="black-frame">
-            <div id="black-frame__requset">
-                    <div class="black-frame__requset-write">
-                        <input type="text" id="black-frame-requset__name"  placeholder="What is your name:">
-                        <input type="text" id="black-frame-requset__number"  placeholder="Your phone number:">
-                        <input type="text" id="black-frame-requset__email"  placeholder="Your email">
-                    </div>
-                    <div class="black-frame__requset-confirm">
-                        <p>I agree to the processing of personal data</p>
-                    </div>
-                    <button type="submit" id="button">Submit</button>
+        <div class="leave-a-quastion__block">
+            <div class="leave-a-quastion__frame">
+                <div class="leave-a-quastion__frame-text">
+                    <label>HAVE ANY QUASTIONS?</label>
                 </div>
+                <div class="leave-a-quastion__frame-name">
+                    <div class="leave-a-quastion__frame-part-a">
+                        <p>Name</p>
+                        <input type="text" id="leave-a-quastion__name" placeholder="What is your name:">
+                    </div>
+                    <div class="leave-a-quastion__frame-part-b">
+                        <p>Phone</p>
+                        <input type="text" id="leave-a-quastion__number" placeholder="Your phone number:">
+                    </div>
+                </div>
+                <div form="leave-a-quastion__frame-email">
+                    <p>Quastion</p>
+                    <input type="text" id="leave-a-quastion__email" placeholder="I want to know">
+                </div>
+                <div class="leave-a-quastion__frame-agree">
+                    <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing
+                        of personal data</p>
+                </div>
+                <button type="submit" id="button-request" class="button-call">SUBMIT</button>
+            </div>
+            <div id="yak1"></div>
+        </div>
+        <div class="media-leave-a-quastion__block">
+            <div class="media-leave-a-quastion__frame">
+                <div class="media-leave-a-quastion__frame-text">
+                    <label>HAVE ANY QUASTIONS?</label>
+                </div>
+                <div class="media-leave-a-quastion__frame-part-a">
+                    <p>Name</p>
+                    <input type="text" id="media-leave-a-quastion__name" placeholder="What is your name:">
+                </div>
+                <div class="media-leave-a-quastion__frame-part-b">
+                    <p>Phone</p>
+                    <input type="text" id="media-leave-a-quastion__number" placeholder="Your phone number:">
+                </div>
+        
+                <div class="media-leave-a-quastion__frame-email">
+                    <p>Quastion</p>
+                    <input type="text" id="media-leave-a-quastion__email" placeholder="I want to know">
+                </div>
+                <div class="media-leave-a-quastion__frame-agree">
+                    <p><input type="checkbox" name="option1" value="a1" id="media-cheсkbox-accept" checked>I agree to the
+                        processing of personal data</p>
+                </div>
+                <button type="submit" id="media-button-request">CALL THE MEASURER</button>
+            </div>
+        </div>
+        <div class="media-leave-a-quastion__block">
+            <div class="media-leave-a-quastion__frame">
+                <div class="media-leave-a-quastion__frame-text">
+                    <label>HAVE ANY QUASTIONS?</label>
+                </div>
+                <div class="media-leave-a-quastion__frame-part-a">
+                    <p>Name</p>
+                    <input type="text" id="media-leave-a-quastion__name" placeholder="What is your name:">
+                </div>
+                <div class="media-leave-a-quastion__frame-part-b">
+                    <p>Phone</p>
+                    <input type="text" id="media-leave-a-quastion__number" placeholder="Your phone number:">
+                </div>
+        
+                <div class="media-leave-a-quastion__frame-email">
+                    <p>Quastion</p>
+                    <input type="text" id="media-leave-a-quastion__email" placeholder="I want to know">
+                </div>
+                <div class="media-leave-a-quastion__frame-agree">
+                    <p><input type="checkbox" name="option1" value="a1" id="media-cheсkbox-accept" checked>I agree to the
+                        processing of personal data</p>
+                </div>
+                <button type="submit" id="media-button-request">CALL THE MEASURER</button>
+            </div>
         </div>
         <div class="city-background">
             <div class="requisites">
-                <h3>Rostov-on-Don, Nansen St., 239 Shopping Center
-                    Decorum Tel +7 (928) 768 32 29</h3>
+                <h3>Rostov-on-Don, Nansen St., 239 Shopping Center</h3>
+                    <h3>Decorum Tel +7 (928) 768 32 29</h3>
+                    <div class="soc-net">
+                        <a href="https://www.instagram.com/?hl=ru" class="animated infinite bounce delay-2s"><img src="./accets/icon-ins.png"></a>
+                        <a href="https://mail.ru/" class="animated infinite bounce delay-2s"> <img src="./accets/icon-mail.png"></a>
+                       
+                        
+                    </div>
                 <img src="./accets/background-black-map.png">
             </div>
         </div>
@@ -639,6 +957,16 @@
                     </div>
                 </div>
             </footer__banner-wrapper>
+            <div class="media-foot">
+                <img src="./accets/background-black-map.png">
+                <div class="media-requisites-title">
+                    <h3>Rostov-on-Don, Nansen St., 239</h3>
+                    <h3>Shopping Center Decorum</h3>
+                    <h3> Tel +7 (928) 768 32 29</h3>
+                    <img src="./accets/icon-mail.png">
+                    <img src="./accets/icon-inst.png">
+                </div>
+            </div>
         </footer>
     </body>
 </html>

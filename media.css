@@ -1,11 +1,11 @@
 /*
 Error: Invalid CSS after "d": expected "{", was ""
-        on line 1 of E:\pr\repair-design-project\media.scss
+        on line 1 of E:\working-area\repair-design-project\media.scss
 
 1: d
 
 Backtrace:
-E:\pr\repair-design-project\media.scss:1
+E:\working-area\repair-design-project\media.scss:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -29,4 +29,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"d\": expected \"{\", was \"\"\A         on line 1 of E:\pr\repair-design-project\media.scss\A \A 1: d"; }
+  content: "Error: Invalid CSS after \"d\": expected \"{\", was \"\"\A         on line 1 of E:\working-area\repair-design-project\media.scss\A \A 1: d"; }
