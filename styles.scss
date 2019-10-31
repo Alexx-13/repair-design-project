@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
 
-@font-face {
-	font-family: 'FuturaDemiC';
-	src: url('../fonts/futurademic.eot');
-	src: local('☺'), url('../fonts/futurademic.woff') format('woff'), url('../fonts/futurademic.ttf') format('truetype'), url('../fonts/futurademic.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+
+
 
 
 
@@ -28,6 +22,40 @@ a {
     color: white;
 }
 
+@font-face {
+	font-family: 'FuturaDemiC';
+	src: url('fonts/futurademic.eot');
+	src: local('☺'), url('fonts/futurademic.woff') format('woff'), url('fonts/futurademic.ttf') format('truetype'), url('fonts/futurademic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaMediumC';
+	src: url('fonts/futurademic.eot');
+	src: local('☺'), url('fonts/futurademic.woff') format('woff'), url('fonts/futurademic.ttf') format('truetype'), url('fonts/futurademic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('fonts/futurademic.eot');
+	src: local('☺'), url('fonts/futurademic.woff') format('woff'), url('fonts/futurademic.ttf') format('truetype'), url('fonts/futurademic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Yeseva One';
+	src: url('fonts/Yeseva One Regular.eot');
+	src: local('☺'), url('fonts/Yeseva One Regular.woff') format('woff'), url('fonts/Yeseva One Regular.ttf') format('truetype'), url('fonts/Yeseva One Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 
 @mixin flexible-rel () {
     position: relative;
@@ -47,6 +75,11 @@ a {
 	color: #E3B873;
 	box-shadow: inset 0 0 0 3px  #E3B873;
 }
+
+::-webkit-input-placeholder { color: #FFFFFF }
+    ::-moz-placeholder      { color: #FFFFFF  }
+    :-moz-placeholder       { color: #FFFFFF  }
+    :-ms-input-placeholder  { color: #FFFFFF  }
 
 #media-icon-area{
     display: none;
@@ -157,6 +190,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: 'FuturaBookC';
 }
 
 
@@ -166,10 +200,13 @@ span{
 
 }
 
+
+
 #header__number{
     color: #E3B873;
     margin-left: 50px;
     text-decoration: underline;
+    font-family: 'FuturaDemiC';
 }
 
 .button-call{
@@ -184,6 +221,7 @@ span{
     position: relative;
     box-sizing: border-box;
     border-radius: 5%;
+    font-family: FuturaDemiC;
 
 }
 
@@ -287,6 +325,7 @@ input:hover{
     transition: all 1s ease;
     position: relative;
     box-sizing: border-box;
+    font-family: FuturaDemiC;
 }
 
 .button-colculate:hover{
@@ -304,6 +343,7 @@ input:hover{
    background-color: transparent;
    transition: all 1s ease;
     margin-left: 30px;
+    font-family: FuturaDemiC;
 }
 
 .button-submit:hover{
@@ -323,6 +363,7 @@ input:hover{
     margin-top: 660px;
     justify-content: center;
     align-items: center;
+    font-family: Yeseva One;
 }
 
 .banner__scroll-down__arrow{
@@ -453,6 +494,7 @@ input:hover{
 #text-review__text{
     position: relative;
     color: white;
+    font-family: FuturaBookC;
 
 
 
@@ -460,6 +502,7 @@ input:hover{
 
 .text-review p{
     color: white;
+    font-family: FuturaBookC;
 }
 
 
@@ -655,6 +698,7 @@ input:hover{
 #title{
     width: 100%;
     height: 50px;
+    font-family: FuturaBookC;
 }
 
 #title a:hover{
@@ -744,19 +788,28 @@ input:hover{
     text-align: center;
     justify-content: center;
     text-align: center;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    color: #363636;
 }
+
+
+
 
 .background__content__info-submit{
     padding-top: 100px;
     display: flex;
     text-align: center;
     justify-content: center;
+   
 
 
 }
 
 .background__content__info-submit__a{
     padding: 0px 50px 0px 0px;
+    
 
 }
 
@@ -765,7 +818,8 @@ input:hover{
     font-size: 15px;
     line-height: 20px;
     padding: 0px 200px 0px 0px;
-    color: rgba(54, 54, 54, 0.5);
+    color: #363636;
+    
 }
 
 #background__content__info-submit__a__name{
@@ -774,7 +828,7 @@ input:hover{
     font-family: FuturaBookC;
     font-size: 18px;
     line-height: 24px;
-
+  
     color: #363636;
 }
 
@@ -790,7 +844,7 @@ input:hover{
 }
 
 #button{
-    @include button()
+    @include button();
 
 }
 
@@ -831,6 +885,11 @@ input:hover{
     display: flex;
     text-align: center;
     justify-content: center;
+    font-family: FuturaBookC;
+    text-transform: none;
+    color: #181818;
+    font-weight: normal;
+    
 }
 
 
@@ -1022,6 +1081,7 @@ input:hover{
     display: flex;
     position: relative;
     left: 500px;
+    width: 480px;
 }
 
 .ellipse__round-container-b {
@@ -1102,7 +1162,7 @@ input:hover{
 }
 
 .leave-a-requeset__frame{
-    display: flex;
+    display: block;
    width: 375px;
     height: 460px;
     background-color: #131313;
@@ -1115,18 +1175,20 @@ input:hover{
     font-weight: bold;
     padding: 30px 0px 0px 0px;
     color: #959595;
+    
+  
 }
 
 .leave-a-requeset__frame-agree p{
     margin-bottom: 50px;
     color: #fff;
+
 }
 
 .leave-a-requeset__frame-text{
     height: 47px;
     width: 230px;
     display: flex;
-    
     justify-content: center;
     font-family: FuturaDemiC;
     font-size: 20px;
@@ -1138,10 +1200,7 @@ input:hover{
     color: #FFFFFF;
 
 }
-::-webkit-input-placeholder {color:#FFFFFF;}
-::-moz-placeholder          {color:#FFFFFF;}/* Firefox 19+ */
-:-moz-placeholder           {color:#FFFFFF;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#FFFFFF;}
+
 
 #leave-a-requeset__name{
     width: 300px;
@@ -1152,12 +1211,6 @@ input:hover{
     line-height: 25px;
     color: #FFFFFF;
     background-color: transparent;
-    
-    
-    
-
-    
-
 }
 
 #leave-a-requeset__number{
@@ -1399,6 +1452,7 @@ h2{
     justify-content: center;
     position: relative;
     z-index:1;
+    
 
 }
 
@@ -1519,7 +1573,7 @@ h2{
 }
 
 .black-box__contant-columns-info-full{
-    margin:0px 0px 0px 0px;
+    margin: 100px 70px 0px 0px;
     background-color: white;
     width: 330px;
     height: 410px;
@@ -1884,8 +1938,30 @@ h2{
     position: relative;
     z-index: 3;
     margin-bottom: 20px;
+   
+    
     
 }
+
+#portrets__description h3{
+    padding-top: 20px;
+    font-family: Yeseva One;
+    color: #181818;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+#portrets__description p{
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 26px;
+    color: #959595;
+}
+
+
+
+
 
 .portrets__description-manager{
     margin: -200px 60px 0px 130px;
@@ -1897,23 +1973,23 @@ h2{
 .portrets__description-manager p{
     padding: 5px 0px 15px 0px;
     font-family: FuturaBookC;
-font-size: 18px;
-line-height: 26px;
-text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
 
-color: #959595;
+    color: #959595;
 }
 
 .portrets__description-manager h3{
-padding: 10px 0px 10px 0px;
-font-family: Yeseva One;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
 
-color: #181818;
+    color: #181818;
 }
 
 
@@ -1939,23 +2015,23 @@ color: #181818;
 .portrets__description-designer p{
     padding: 5px 0px 15px 0px;
     font-family: FuturaBookC;
-font-size: 18px;
-line-height: 26px;
-text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
 
-color: #959595;
+    color: #959595;
 }
 
 .portrets__description-designer h3{
-padding: 10px 0px 10px 0px;
-font-family: Yeseva One;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
 
-color: #181818;
+    color: #181818;
 }
 
 
@@ -1978,17 +2054,17 @@ color: #181818;
     margin: -200px 60px 0px 130px;
     background-color: white;
     width: 233px;
-    height: 137px;
+    height: 150px;
 }
 
 .portrets__description-foremanr p{
-    padding: 5px 0px 15px 0px;
+    padding: 20px 0px 0px 0px;
     font-family: FuturaBookC;
-font-size: 18px;
-line-height: 26px;
-text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
 
-color: #959595;
+    color: #959595;
 }
 
 .portrets__description-foremnr h3{
@@ -1999,17 +2075,19 @@ color: #959595;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-
+   
     color: #181818;
 
 }
 
 #button-exp-twelve{
+   
     background-color: #E3B873;
     width: 233px;
     height: 31px;
     color: #fff;
     @include button()
+    
 }
 
 #button-exp-twelve:hover{
@@ -2099,6 +2177,7 @@ color: #959595;
     display: inline-flex;
     padding: 0px 20px 0px 20px;
     align-items: center;
+   
 }
 
 
@@ -2127,7 +2206,7 @@ color: #959595;
 
 .reviews__clients-portfolious__fedosova-logo{
     background-color: #E3B873;
-    width: 400px;
+    width: 300px;
     height: 54px;
 }
 
@@ -2153,6 +2232,7 @@ color: #959595;
     text-align: justify;
     color: #959595;
     text-transform: lowercase;
+    width: 350px;
 }
 
 .reviews__clients-portfolious__fedosova h3{
@@ -2179,6 +2259,7 @@ color: #959595;
     text-align: justify;
     color: #959595;
     text-transform: lowercase;
+    width: 350px;
 }
 
 
@@ -2186,7 +2267,7 @@ color: #959595;
 
 .reviews__clients-portfolious__afanasyev-logo{
     background-color: #E3B873;
-     width: 400px;
+    width: 300px;
     height: 54px;
 }
 
@@ -2207,11 +2288,12 @@ color: #959595;
     text-align: justify;
     color: #959595;
     text-transform: lowercase;
+    width: 350px;
 }
 
 .reviews__clients-portfolious__kiriev-logo{
     background-color: #E3B873;
-     width: 400px;
+    width: 300px;
     height: 54px;
 }
 
@@ -2306,7 +2388,7 @@ color: #959595;
    line-height: 25px;
    text-align: center;
    align-items: center;
-
+   margin-right: 100px;
 
 
    color: #FFFFFF;
@@ -2363,6 +2445,7 @@ color: #959595;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 80px;
 }
 
 .leave-a-quastion__frame-agree p{
@@ -2377,6 +2460,10 @@ color: #959595;
    margin-left: 200px;
    color: #FFFFFF;
    border-color: #E3B873;
+}
+
+.leave-a-quastion__frame-low-but{
+    margin-left: 50px;
 }
 
 
@@ -3050,6 +3137,7 @@ footer{
         line-height: 34px;
         color: #363636;
         background-color: #131313;
+        font-family: FuturaBookC;
         
     }
     
@@ -3379,7 +3467,7 @@ footer{
      
     
     
-        color: #FFFFFF;
+       
     
     }
     
@@ -3392,6 +3480,7 @@ footer{
         line-height: 25px;
         color: #FFFFFF;
         background-color: transparent;
+        
         
     
     }
