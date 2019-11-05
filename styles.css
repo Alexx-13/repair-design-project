@@ -2012,23 +2012,27 @@ footer {
   #header__banner-wrapper {
     position: relative;
     height: 533px;
+    width: 640px;
     left: 0px;
     top: 0px;
     display: flex;
     background-color: #131313; }
 
   .header {
-    width: 640px;
+    width: 100%;
     height: 82px;
+    justify-content: space-around;
     background: #131313; }
 
   header {
-    height: 533px; }
+    height: 533px;
+    width: 100%; }
 
   #header__title {
     font-family: FuturaDemiC;
     font-size: 12px;
     line-height: 14px;
+    margin-left: 0px;
     color: #E3B873; }
 
   span {
@@ -2041,7 +2045,7 @@ footer {
     font-family: FuturaDemiC;
     font-size: 12px;
     line-height: 14px;
-    text-align: left;
+    text-align: none;
     color: #FFFFFF; }
 
   .button-call {
@@ -2055,7 +2059,8 @@ footer {
     width: 1440px;
     display: flex;
     flex-direction: row;
-    height: 533px; }
+    height: 533px;
+    width: 100%; }
 
   #banner__content {
     background-image: url("./accets/room-background.png");
@@ -2089,32 +2094,36 @@ footer {
     height: 476px;
     margin-left: 0;
     margin-top: 0;
-    background-image: url("./accets/room-background.png");
+    background-image: url("./accets/media-room-background.png");
     padding: 0px 40px 70px 40px; }
 
   .banner__content-info h1 {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
+    padding-top: 50px;
     font-size: 40px;
     line-height: 53px;
     color: #FFFFFF;
-    width: 500px;
+    width: 600px;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: none; }
 
   .banner__content-info p {
+    padding-top: 30px;
     font-family: FuturaBookC;
-    font-size: 22px;
-    line-height: 30px;
     color: #FFFFFF;
-    width: 380px; }
+    width: 380px;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 135.84%; }
 
   .banner__content-info div {
     height: 130px;
     width: 214px; }
 
   .button-colculate {
+    margin-top: 50px;
     width: 500px;
     height: 51px;
     background-color: #E3B873;
@@ -2174,7 +2183,7 @@ footer {
 
   #background__content__slider {
     position: relative;
-    width: 100%;
+    width: 640px;
     height: 1200px;
     display: flex;
     background: #131313; }
@@ -2192,7 +2201,8 @@ footer {
     width: 442px;
     height: 700px;
     background-color: #131313;
-    padding-left: 60px; }
+    padding-left: 60px;
+    padding-top: 50px; }
 
   .text-review__title {
     display: flex;
@@ -2225,11 +2235,15 @@ footer {
   .text-review span {
     width: 100px;
     color: #E3B873;
+    padding-left: 150px;
+    justify-content: center;
     position: absolute; }
 
   #text-review__text {
     position: relative;
-    color: white; }
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px; }
 
   .text-review p {
     color: white; }
@@ -2250,8 +2264,122 @@ footer {
   #text-review__media-slider {
     display: flex;
     position: relative;
-    height: 245px;
-    background-color: #fff; }
+    height: 245px; }
+
+  .slider-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex; }
+
+  .menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    z-index: 900;
+    width: 900px;
+    bottom: 0; }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    transition: all 1s ease;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5%;
+    width: 60px;
+    height: 60px;
+    background: #E3B873;
+    border-color: #E3B873;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 800px; }
+    .menu label:hover {
+      background: rgba(0, 0, 0, 0);
+      color: #E3B873;
+      box-shadow: inset 0 0 0 3px  #E3B873; }
+
+  #menu__dot-1 {
+    display: none; }
+
+  .slider-media-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex; }
+
+  .menu-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0; }
+
+  .menu-media label {
+    cursor: pointer;
+    display: inline-block;
+    transition: all 1s ease;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5%;
+    width: 60px;
+    height: 60px;
+    background: #E3B873;
+    border-color: #E3B873;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 300px; }
+    .menu-media label:hover {
+      background: rgba(0, 0, 0, 0);
+      color: #E3B873;
+      box-shadow: inset 0 0 0 3px  #E3B873; }
+
+  #menu-media__dot-1 {
+    display: none; }
+
+  .slider-media-container {
+    height: 100%;
+    width: 100%; }
+
+  #menu-media__dot-2 span {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; }
+
+  .slide-media {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s; }
+
+  [id^="slide"]:checked + .slide-media {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out; }
+
+  .slide-media-1 {
+    background-image: url("./accets/1st-room.png");
+    width: 100%;
+    display: flex; }
+
+  .slide-media-2 {
+    background-image: url("./accets/2nd-room.png");
+    width: 100%;
+    display: flex; }
 
   .parameters {
     flex-direction: row;
