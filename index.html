@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0,
-            shrink-to-fit=no">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0,">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/fonts.css">
@@ -159,6 +158,7 @@
 
         <div id="background__content__info" class="container">
             <div class="background__content__info-info">
+                <div> <img src="accets/yellow-rectangle.png"></div>
                 <p>At each facility, a camera is installed that broadcasts the
                     progress of work on the clock. At any time, you can go to
                     our website and monitor the progress of work in your
@@ -173,7 +173,9 @@
                     <div class="leave-a-requeset__frame">
             
                         <div form="leave-a-requeset__frame-name">
-                            <p>Name</p>
+                            <div>
+                                <p>Name</p>
+                            </div>
                             <input type="text" id="leave-a-requeset__name" placeholder="What is your name:">
                         </div>
                         <div form="leave-a-requeset__frame-number">
@@ -181,10 +183,10 @@
                             <input type="text" id="leave-a-requeset__number" placeholder="Your phone number:">
                         </div>
                         <div class="leave-a-requeset__frame-agree">
-                            <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the
+                            <p><input type="checkbox" name="option1" value="a1" id="media-cheсkbox-accept" checked>I agree to the
                                 processing of personal data</p>
                         </div>
-                        <button type="submit" id="button-request">CALL THE MEASURER</button>
+                        <button type="submit" id="media-button-request">CALL THE MEASURER</button>
                     </div>
                 </div>
             </div>
@@ -202,21 +204,7 @@
             <div class="background__content__info-confirm">
                 <p><input type="checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the processing of personal data<Br>
             </div>
-        <div class="media-background__content__info-submit">
-            <div class="media-background__content__info-submit__a">
-                <p>Name</p>
-                <input type="text" id="media-background__content__info-submit__a__name" placeholder="What is your name:">
-                <p>Phone</p>
-                <input type="text" id="media-background__content__info-submit__b__number" placeholder="Your phone number:">
-                <div class="media-background__content__info-confirm">
-                    <p><input type="media-checkbox" name="option1" value="a1" id="cheсkbox-accept" checked>I agree to the
-                        processing of personal data<Br>
-        
-                </div>
-        
-            </div>
-        
-        </div>
+     
         <button type="submit" id="media-button-submit">
             <p>SUBMIT</p>
         </button>
@@ -453,15 +441,9 @@
                 <h2>We realize your
                     wildest fantasies</h2>
             </div>
-            <div id="text-review__media-slider">
+            <div id="media-text-review__media-slider">
                 <div class="title-media-pictures-review">
-                    <div id="title-media">
-                        <a href="#" class="animated infinite bounce
-                                        delay-2s">ROSTOV-ON-DON ADMIRAL</a>
-                        <a href="#" class="sochi-thives">SOCHI THIEVES</a>
-                        <a href="#" class="animated infinite bounce
-                                    delay-2s">ROSTOV-ON-DON PATRIOTIC</a>
-                    </div>
+                  
                     <div class="slider-media-container">
                         <div class="menu-media">
                             <label id="menu-media__dot-1" for="slide-media-dot-1"></label>
@@ -479,6 +461,10 @@
             <div class="design-title">
                 <h2>DESIGN PROJECT</h2>
                 <img src="./accets/pencil.png">
+               
+            </div>
+            <div class="media-design-title">
+                <img src="./accets/media-pencil.png">
             </div>
             <div id="design-contant">
                 <p>Design project not only helps to make the repair of your
@@ -740,7 +726,7 @@
                     <div class="media-portrets__description-manager__column">
                         <h3>Dmitry tulyakov</h3>
                         <p>Project manager</p>
-                        <p><input type="button" id="button-exp-eight" value="WORK EXPERIENCE 8 YEARS"></p>
+                        <a><input type="button" id="button-exp-eight" value="WORK EXPERIENCE 8 YEARS"></a>
                     </div>
                 </div>
             </div>
@@ -753,7 +739,7 @@
                     <div class="media-portrets__description-designer__column">
                         <h3>Larisa Kotlyarova</h3>
                         <p>Designer</p>
-                        <p><input type="button" id="button-exp-six" value="WORK EXPERIENCE 6 YEARS"></p>
+                        <a><input type="button" id="button-exp-six" value="WORK EXPERIENCE 6 YEARS"></a>
                     </div>
                 </div>
             </div>
@@ -768,7 +754,7 @@
                     <div class="media-portrets__description-foremanr__column">
                         <h3>Alexey Efimov</h3>
                         <p>Foremanr</p>
-                        <p><input type="button" id="button-exp-twelve" value="WORK EXPERIENCE 12 YEARS"></p>
+                        <a><input type="button" id="button-exp-twelve" value="WORK EXPERIENCE 12 YEARS"></a>
                     </div>
                 </div>
             </div>
@@ -868,31 +854,7 @@
             </div>
             <div id="yak1"></div>
         </div>
-        <div class="media-leave-a-quastion__block">
-            <div class="media-leave-a-quastion__frame">
-                <div class="media-leave-a-quastion__frame-text">
-                    <label>HAVE ANY QUASTIONS?</label>
-                </div>
-                <div class="media-leave-a-quastion__frame-part-a">
-                    <p>Name</p>
-                    <input type="text" id="media-leave-a-quastion__name" placeholder="What is your name:">
-                </div>
-                <div class="media-leave-a-quastion__frame-part-b">
-                    <p>Phone</p>
-                    <input type="text" id="media-leave-a-quastion__number" placeholder="Your phone number:">
-                </div>
         
-                <div class="media-leave-a-quastion__frame-email">
-                    <p>Quastion</p>
-                    <input type="text" id="media-leave-a-quastion__email" placeholder="I want to know">
-                </div>
-                <div class="media-leave-a-quastion__frame-agree">
-                    <p><input type="checkbox" name="option1" value="a1" id="media-cheсkbox-accept" checked>I agree to the
-                        processing of personal data</p>
-                </div>
-                <button type="submit" id="media-button-request">CALL THE MEASURER</button>
-            </div>
-        </div>
         <div class="media-leave-a-quastion__block">
             <div class="media-leave-a-quastion__frame">
                 <div class="media-leave-a-quastion__frame-text">
@@ -959,13 +921,16 @@
                 </div>
             </footer__banner-wrapper>
             <div class="media-foot">
-                <img src="./accets/background-black-map.png">
+                <img src="./accets/media-background-black-map.png">
                 <div class="media-requisites-title">
                     <h3>Rostov-on-Don, Nansen St., 239</h3>
                     <h3>Shopping Center Decorum</h3>
                     <h3> Tel +7 (928) 768 32 29</h3>
-                    <img src="./accets/icon-mail.png">
-                    <img src="./accets/icon-inst.png">
+                    <div> 
+                        <a href="https://www.instagram.com/?hl=ru" class="animated infinite bounce delay-2s"><img src="./accets/icon-mail.png">
+                        <a href="https://mail.ru/" class="animated infinite bounce delay-2s"><img src="./accets/icon-inst.png">
+                    </div>
+                   
                 </div>
             </div>
         </footer>
